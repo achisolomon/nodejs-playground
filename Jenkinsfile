@@ -19,7 +19,7 @@ node {
    stage('build publish npm pakage'){
        sh 'npm init --yes'
        sh 'npm install request --save'
-       sh 'npm install -g npm-cli-login'
+       sh 'sudo npm install -g npm-cli-login'
        sh 'npm-cli-login -u achisolomon -p at105one -e achisolomon@gmail.com'
        sh 'npm publish'
    }
