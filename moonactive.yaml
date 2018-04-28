@@ -15,6 +15,6 @@
   
   - name: Install "nodejs-playground" node.js latest package.
     npm:
-      name: @achisolomon/nodejs-playground
+      name: "@achisolomon/nodejs-playground"
       path: /home/ec2-user/Achi2
       state: latest
