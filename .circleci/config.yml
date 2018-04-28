@@ -1,3 +1,12 @@
+
+machine:
+  python:
+    version: 2.7.10
+
+dependencies:
+  pre:
+    - pip install ansible
+    
 # Javascript Node CircleCI 2.0 configuration file
 #
 # Check https://circleci.com/docs/2.0/language-javascript/ for more details
@@ -20,6 +29,6 @@ jobs:
       - checkout
         
       # run tests!
-      - run: yarn test
+      #- run: yarn test
 
 
