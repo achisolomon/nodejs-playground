@@ -6,22 +6,12 @@ node {
       git branch: 'dev', url: 'https://github.com/achisolomon/nodejs-playground.git'
      
    }
-   stage('prepare server') {
+   stage('ping server') {
         ansiblePlaybook(
             inventory: 'inventory',
             playbook: 'moonactive.yaml',
             disableHostKeyChecking: true,
-            
             credentialsId: '1677294b-9f24-4f4d-af2f-51b040380acb'
-            
-            //credentialsId: '9361ae94-2cd8-4069-8867-fb5c9e33100a'
-            //,
-            //extraVars: [
-            //    login: 'mylogin',
-            //    secret_key: [value: 'g4dfKWENpeF6pY05', hidden: true]
-            //]
-
-            //StrictHostKeyChecking=no,
         )
    }
 }
