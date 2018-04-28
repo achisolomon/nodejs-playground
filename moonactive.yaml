@@ -8,7 +8,13 @@
   - name: have nodejs yum repo
     shell: curl --silent --location https://rpm.nodesource.com/setup_9.x | sudo bash -
 
-  - name: install the latest version of Apache
+  - name: make sure nodejs is installed
     yum:
       name: nodejs
+      state: latest
+  
+  - name: Install "nodejs-playground" node.js latest package.
+    npm:
+      name: @achisolomon/nodejs-playground
+      path: /home/ec2-user/Achi2
       state: latest
