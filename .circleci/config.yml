@@ -30,8 +30,9 @@ jobs:
         
       # run tests!
       #- run: yarn test
-      test:
-        override:
-        - ansible-playbook moonactive.yaml
+      
+      #test:
+      #  override:
+      #  - ansible-playbook moonactive.yaml
 
 
