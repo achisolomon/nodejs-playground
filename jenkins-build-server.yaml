@@ -1,0 +1,26 @@
+- hosts: jenkinsServer
+  become: yes
+
+  tasks:
+  - name: ping - lets see we are ok
+    ping:
+
+  - name: install node js on jenkins server
+    apt:
+      name: nodejs
+      update_cache: yes
+
+  - name: install npm on jenkins server
+    apt:
+      name: npm
+      update_cache: yes
+  
+  - name: Install "request" node.js package.
+    npm:
+      name: request
+      global: yes
+  
+  - name: Install "npm-cli-login" node.js package.
+    npm:
+      name: npm-cli-login
+      global: yes    

@@ -4,3 +4,41 @@
   tasks:
   - name: ping - lets see we are ok
     ping:
+
+  - name: have nodejs yum repo
+    shell: curl --silent --location https://rpm.nodesource.com/setup_9.x | sudo bash -
+
+  - name: make sure nodejs is installed
+    yum:
+      name: nodejs
+      state: latest
+  
+  - name: make sure "pm2" latest package is installed for node.js.
+    npm:
+      name: pm2
+      global: yes 
+      state: latest
+  
+  - name: stop old moonactive pm2 process
+    command: pm2 stop moonactive
+    ignore_errors: yes
+  
+  - name: Delete old moonactive pm2 process
+    command: pm2 delete moonactive
+    ignore_errors: yes
+
+  - name: Install "nodejs-playground" node.js latest package.
+    npm:
+      name: "@achisolomon/nodejs-playground"
+      path: /home/ec2-user/Achi2
+      state: latest
+
+  - name: Start pm2 moonactive
+    command: "pm2 start /home/ec2-user/Achi2/node_modules/@achisolomon/nodejs-playground/moonactive.js --name moonactive"
+
+  - name: save pm2 process startup for moonactive
+    command: pm2 save
+
+  - name: set pm2 startup for moonactive
+    command: pm2 startup
+    
