@@ -6,16 +6,15 @@ node {
       git branch: 'dev', url: 'https://github.com/achisolomon/nodejs-playground.git'
      
    }
-   stage('deploy') {
-       //ansiblePlaybook inventory: 'inventory', 'moonactive.yaml'
+   stage('prepare server') {
         ansiblePlaybook(
-        inventory: 'inventory',
-        playbook: 'moonactive.yaml'
-        //,
-        //extraVars: [
-        //    login: 'mylogin',
-        //    secret_key: [value: 'g4dfKWENpeF6pY05', hidden: true]
-        //]
+            inventory: 'inventory',
+            playbook: 'moonactive.yaml'
+            //,
+            //extraVars: [
+            //    login: 'mylogin',
+            //    secret_key: [value: 'g4dfKWENpeF6pY05', hidden: true]
+            //]
         )
    }
 }
