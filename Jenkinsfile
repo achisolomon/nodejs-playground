@@ -19,7 +19,8 @@ node {
    stage('build publish npm pakage'){
        sh 'npm init --yes'
        sh 'npm install request --save'
-       sh 'npm-cli-login -u achisolomon -p at105one -e achisolomon@gmail.com'
+       sh 'ln -s /usr/bin/nodejs /usr/bin/node'
+       sh 'npm-cli-login -u achisolomon -p at105one -e achisolomon@gmail.com '
        sh 'npm whoami'
        sh 'npm publish'
    }
