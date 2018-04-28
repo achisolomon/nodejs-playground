@@ -8,7 +8,7 @@ var serviceProxyPort =80;
 var dummyServicePortStart =8081;
 
 
-var service1Msg = "Hello World from ";
+var service1Msg = "Hello Ronen from ";
 
 for( i =1 ; i <=3 ; ++i)
 {
