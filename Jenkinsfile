@@ -11,9 +11,8 @@ node {
             inventory: 'inventory',
             playbook: 'moonactive.yaml',
             disableHostKeyChecking: true,
-            credentialsId: '~/.ssh/ma-home-exercise-achi.pem'
-            
-            //credentialsId: '9361ae94-2cd8-4069-8867-fb5c9e33100a'
+            credentialsId: '9361ae94-2cd8-4069-8867-fb5c9e33100a'
+            //credentialsId: '~/.ssh/ma-home-exercise-achi.pem'
             //,
             //extraVars: [
             //    login: 'mylogin',
