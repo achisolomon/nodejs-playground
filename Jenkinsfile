@@ -7,6 +7,6 @@ node {
      
    }
    stage('deploy') {
-       ansiblePlaybook 'moonactive.yaml'
+       ansiblePlaybook inventory: 'inventory', 'moonactive.yaml'
    }
 }
