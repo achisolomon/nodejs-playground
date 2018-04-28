@@ -1,0 +1,6 @@
+- hosts: moonactiveServer
+  become: yes
+
+  tasks:
+  - name: ping - lets see we are ok
+    ping:
