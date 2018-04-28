@@ -39,6 +39,6 @@
   - name: save pm2 process startup for moonactive
     command: pm2 save
 
-    - name: set pm2 startup for moonactive
+  - name: set pm2 startup for moonactive
     command: pm2 startup
     
