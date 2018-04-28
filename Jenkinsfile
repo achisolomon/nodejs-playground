@@ -6,8 +6,18 @@ node {
       git branch: 'dev', url: 'https://github.com/achisolomon/nodejs-playground.git'
      
    }
+
+   stage('setup build server') {
+        ansiblePlaybook(
+            inventory: 'inventory',
+            playbook: 'jenkins-build-server.yaml',
+            //disableHostKeyChecking: true,
+            //credentialsId: '1677294b-9f24-4f4d-af2f-51b040380acb'
+        )
+   }
+
    stage('publish npm pakage'){
-       sh 'npm init'
+       //sh 'npm init'
    }
 
    stage('ping server') {
