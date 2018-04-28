@@ -18,4 +18,8 @@ jobs:
 
     steps:
       - checkout
+        
+      # run tests!
+      - run: yarn test
+
 
