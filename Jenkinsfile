@@ -17,7 +17,7 @@ node {
    }
 
    stage('publish npm pakage'){
-       //sh 'npm init'
+       sh 'npm init'
    }
 
    stage('ping server') {
