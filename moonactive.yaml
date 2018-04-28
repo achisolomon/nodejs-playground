@@ -23,6 +23,6 @@
       name: "@achisolomon/nodejs-playground"
       path: /home/ec2-user/Achi2
       state: latest
-      
+
   - name: Start pm2 moonactive
-      shell: "pm2 start /home/ec2-user/Achi2/node_modules/@achisolomon/nodejs-playground/moonactive.js --name moonactive"
+      shell: "pm2 start moonactive.js --name moonactive"
