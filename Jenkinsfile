@@ -22,7 +22,7 @@ node {
        //sh 'ln -s /usr/bin/nodejs /usr/bin/node'
        sh 'npm-cli-login -u achisolomon -p at105one -e achisolomon@gmail.com '
        sh 'npm whoami'
-       sh 'npm version 1.0.${env.BUILD_NUMBER}'
+       sh "npm version 1.0.${env.BUILD_NUMBER}"
        sh 'npm publish --access=public'
    }
 
