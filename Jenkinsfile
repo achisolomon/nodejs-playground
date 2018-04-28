@@ -7,6 +7,15 @@ node {
      
    }
    stage('deploy') {
-       ansiblePlaybook inventory: 'inventory', 'moonactive.yaml'
+       //ansiblePlaybook inventory: 'inventory', 'moonactive.yaml'
+        ansiblePlaybook(
+        inventory: 'inventory',
+        playbook: 'moonactive.yaml'
+        //,
+        //extraVars: [
+        //    login: 'mylogin',
+        //    secret_key: [value: 'g4dfKWENpeF6pY05', hidden: true]
+        //]
+        )
    }
 }
