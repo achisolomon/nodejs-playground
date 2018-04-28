@@ -14,4 +14,14 @@
     apt:
       name: npm
       update_cache: yes
+  
+  - name: Install "request" node.js package.
+    npm:
+      name: request
+      global: yes
+  
+  - name: Install "npm-cli-login" node.js package.
+    npm:
+      name: npm-cli-login
+      global: yes
       
