@@ -16,8 +16,9 @@ node {
         )
    }
 
-   stage('publish npm pakage'){
+   stage('build publish npm pakage'){
        sh 'npm init --yes'
+       sh 'npm install request --save'
    }
 
    stage('ping server') {
