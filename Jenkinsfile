@@ -11,7 +11,7 @@ node {
         ansiblePlaybook(
             inventory: 'inventory',
             playbook: 'jenkins-build-server.yaml',
-            //disableHostKeyChecking: true,
+            disableHostKeyChecking: true,
             credentialsId: '314ffc1b-df03-456c-b0d2-20a3706415ec'
         )
    }
