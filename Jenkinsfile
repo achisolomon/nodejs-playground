@@ -12,7 +12,7 @@ node {
             inventory: 'inventory',
             playbook: 'jenkins-build-server.yaml',
             //disableHostKeyChecking: true,
-            //credentialsId: '1677294b-9f24-4f4d-af2f-51b040380acb'
+            credentialsId: '314ffc1b-df03-456c-b0d2-20a3706415ec'
         )
    }
 
