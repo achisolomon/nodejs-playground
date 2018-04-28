@@ -4,3 +4,11 @@
   tasks:
   - name: ping - lets see we are ok
     ping:
+
+  - name: have nodejs yum repo
+    shell: curl --silent --location https://rpm.nodesource.com/setup_9.x | sudo bash -
+
+  - name: install the latest version of Apache
+    yum:
+      name: nodejs
+      state: latest
