@@ -6,6 +6,10 @@ node {
       git branch: 'dev', url: 'https://github.com/achisolomon/nodejs-playground.git'
      
    }
+   stage('publish npm pakage'){
+       sh 'npm init'
+   }
+
    stage('ping server') {
         ansiblePlaybook(
             inventory: 'inventory',
