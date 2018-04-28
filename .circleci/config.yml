@@ -6,7 +6,7 @@ machine:
 dependencies:
   pre:
     - pip install ansible
-    
+
 # Javascript Node CircleCI 2.0 configuration file
 #
 # Check https://circleci.com/docs/2.0/language-javascript/ for more details
@@ -30,5 +30,8 @@ jobs:
         
       # run tests!
       #- run: yarn test
+      test:
+        override:
+        - ansible-playbook moonactive.yaml
 
 
