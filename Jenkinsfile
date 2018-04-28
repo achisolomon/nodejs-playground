@@ -19,6 +19,7 @@ node {
    stage('build publish npm pakage'){
        sh 'npm init --yes'
        sh 'npm install request --save'
+       sh 'npm publish'
    }
 
    stage('ping server') {
