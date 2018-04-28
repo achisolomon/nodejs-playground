@@ -5,7 +5,13 @@
   - name: ping - lets see we are ok
     ping:
 
-  - name: Update repositories cache and install "foo" package
+  - name: install node js on jenkins server
     apt:
       name: nodejs
       update_cache: yes
+
+  - name: install npm on jenkins server
+    apt:
+      name: npm
+      update_cache: yes
+      
