@@ -13,6 +13,12 @@
       name: nodejs
       state: latest
   
+  - name: make sure "pm2" latest package is installed for node.js.
+    npm:
+      name: pm2
+      global: yes 
+      state: latest
+    
   - name: Install "nodejs-playground" node.js latest package.
     npm:
       name: "@achisolomon/nodejs-playground"

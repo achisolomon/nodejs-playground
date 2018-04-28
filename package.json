@@ -19,5 +19,6 @@
   "homepage": "https://github.com/achisolomon/nodejs-playground#readme",
   "dependencies": {
     "request": "^2.85.0"
-  }
+  },
+  "devDependencies": {}
 }
