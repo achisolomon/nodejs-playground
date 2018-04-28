@@ -4,7 +4,8 @@
   "description": "playground for nodejs",
   "main": "moonactive.js",
   "scripts": {
-    "start": "node moonactive.js",
+    "start": "pm2 start moonactive.js --name moonactive",
+    "stop": "pm2 stop moonactive",
     "test": "echo \"Error: no test specified\" "
   },
   "repository": {
