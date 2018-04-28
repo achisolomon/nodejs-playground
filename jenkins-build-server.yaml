@@ -23,11 +23,4 @@
   - name: Install "npm-cli-login" node.js package.
     npm:
       name: npm-cli-login
-      global: yes
-  
-  #workaroud for npm-cli-login - create a sym link for node    
-  - file:
-    src: /usr/bin/nodejs
-    dest: /usr/bin/node
-    state: link
-      
+      global: yes    
