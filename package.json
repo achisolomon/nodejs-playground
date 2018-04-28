@@ -4,6 +4,7 @@
   "description": "playground for nodejs",
   "main": "moonactive.js",
   "scripts": {
+    "start": "node moonactive.js",
     "test": "echo \"Error: no test specified\" "
   },
   "repository": {
@@ -19,6 +20,5 @@
   "homepage": "https://github.com/achisolomon/nodejs-playground#readme",
   "dependencies": {
     "request": "^2.85.0"
-  },
-  "devDependencies": {}
+  }
 }
