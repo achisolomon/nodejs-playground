@@ -2,7 +2,7 @@ var http = require('http');
 var url = require('url');
 var os = require("os");
 /*
-var hostname = os.hostname();
+var hostname = os.hostname(); // on loccal machine use this.
 */
 var hostname = "localhost";
 var requestforward = require('request'); 
