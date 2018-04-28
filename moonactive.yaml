@@ -25,4 +25,5 @@
       state: latest
 
   - name: Start pm2 moonactive
-      shell: "pm2 start moonactive.js --name moonactive"
+    shell: "pm2 start moonactive.js --name moonactive"
+    
