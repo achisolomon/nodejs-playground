@@ -6,14 +6,4 @@ node {
       git 'https://github.com/achisolomon/nodejs-playground.git'
      
    }
-   stage('Build') {
-      //TODO
-   
-   stage('Results') {
-      //TODO
-            
-   }
-   stage('deploy') {
-       ansiblePlaybook 'moonactive.yaml'
-   }
 }
