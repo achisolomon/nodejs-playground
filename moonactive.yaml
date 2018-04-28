@@ -36,6 +36,9 @@
   - name: Start pm2 moonactive
     command: "pm2 start /home/ec2-user/Achi2/node_modules/@achisolomon/nodejs-playground/moonactive.js --name moonactive"
 
-  - name: set pm2 startuo for moonactive
+  - name: save pm2 process startup for moonactive
+    command: pm2 save
+
+    - name: set pm2 startup for moonactive
     command: pm2 startup
     
