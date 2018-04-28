@@ -1,6 +1,10 @@
 
 moonactiveServer ansible_ssh_host=ec2-34-204-51-83.compute-1.amazonaws.com
 
+jenkinsServer ansible_ssh_host=localhost
+
 [moonactiveServers]
 moonactiveServer
 
+[jenkinsServers]
+jenkinsServer

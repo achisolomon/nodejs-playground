@@ -1,0 +1,11 @@
+- hosts: jenkinsServer
+  become: yes
+
+  tasks:
+  - name: ping - lets see we are ok
+    ping:
+
+  - name: Update repositories cache and install "foo" package
+    apt:
+      name: nodejs
+      update_cache: yes
