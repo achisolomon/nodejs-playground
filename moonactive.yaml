@@ -18,6 +18,15 @@
       name: pm2
       global: yes 
       state: latest
+  
+  - name: stop old moonactive pm2 process
+    command: pm2 stop moonactive
+    ignore_errors: yes
+  
+  - name: Delete old moonactive pm2 process
+    command: pm2 delete moonactive
+    ignore_errors: yes
+
   - name: Install "nodejs-playground" node.js latest package.
     npm:
       name: "@achisolomon/nodejs-playground"
