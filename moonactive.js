@@ -7,7 +7,7 @@ var hostname = os.hostname(); // on loccal machine use this.
 var hostname = "localhost";
 var requestforward = require('request'); 
 
-var serviceProxyPort =8080;
+var serviceProxyPort =80;
 var dummyServicePortStart =8081;
 
 
