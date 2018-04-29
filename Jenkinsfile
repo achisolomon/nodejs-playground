@@ -1,4 +1,4 @@
-node {
+snode {
    //def mvnHome
    stage('Preparation - scm , and server setup') { // for display purposes
       // Get some code from a GitHub repository - only dev branch
@@ -16,7 +16,7 @@ node {
         sh 'npm whoami'
         sh "npm version 1.0.${env.BUILD_NUMBER}"     
    }
-    stage('publish npm pakage'){
+    stage('test'){
        echo 'add tests here'
    }
    stage('publish npm pakage'){
