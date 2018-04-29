@@ -12,7 +12,8 @@ node {
    }
 
    stage('build') {
-        sh 'npm-cli-login -u achisolomon -p at105one -e achisolomon@gmail.com '
+       //NpmRepoPass
+        sh 'npm-cli-login -u achisolomon -p ${params.NpmRepoPass} -e achisolomon@gmail.com '
         sh 'npm whoami'
         sh "npm version 1.0.${env.BUILD_NUMBER}"     
    }
