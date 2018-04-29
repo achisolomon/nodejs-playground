@@ -1,6 +1,6 @@
-snode {
-   //def mvnHome
-   stage('Preparation - scm , and server setup') { // for display purposes
+node {
+   
+   stage('Preparation - scm , and server setup') { 
       // Get some code from a GitHub repository - only dev branch
       git branch: 'dev', url: 'https://github.com/achisolomon/nodejs-playground.git'
       ansiblePlaybook(
