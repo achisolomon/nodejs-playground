@@ -12,7 +12,9 @@ node {
    }
 
    stage('build') {
+        sh 'set +x' //echo off..
         sh "npm-cli-login -u achisolomon -p ${params.NpmRepoPass} -e achisolomon@gmail.com "
+        sh 'set -x' // echo on
         sh 'npm whoami'
         sh "npm version 1.0.${env.BUILD_NUMBER}"     
    }
